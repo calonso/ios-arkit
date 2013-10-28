@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071F37F5181EF44800F1C53B /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37EA181EF44800F1C53B /* arrow.png */; };
+		071F37F6181EF44800F1C53B /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37EB181EF44800F1C53B /* box.png */; };
+		071F37F7181EF44800F1C53B /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37EC181EF44800F1C53B /* close.png */; };
+		071F37F8181EF44800F1C53B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37ED181EF44800F1C53B /* Default-568h@2x.png */; };
+		071F37F9181EF44800F1C53B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37EE181EF44800F1C53B /* Default.png */; };
+		071F37FA181EF44800F1C53B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37EF181EF44800F1C53B /* Default@2x.png */; };
+		071F37FB181EF44800F1C53B /* radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37F0181EF44800F1C53B /* radar.png */; };
+		071F37FD181EF44800F1C53B /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071F37F3181EF44800F1C53B /* DetailView.xib */; };
+		071F37FE181EF44800F1C53B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071F37F4181EF44800F1C53B /* ViewController.xib */; };
+		071F3800181EF49000F1C53B /* radar_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F37FF181EF49000F1C53B /* radar_dot.png */; };
+		0732E367181AC24D00B168AC /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0732E366181AC24D00B168AC /* DetailView.m */; };
+		0793C13018156D5600E285D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0793C12F18156D5600E285D7 /* Foundation.framework */; };
+		0793C13218156D5600E285D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0793C13118156D5600E285D7 /* CoreGraphics.framework */; };
+		0793C13418156D5600E285D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0793C13318156D5600E285D7 /* UIKit.framework */; };
+		0793C13C18156D5600E285D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C13B18156D5600E285D7 /* main.m */; };
+		0793C17A18156E9C00E285D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C16618156E9C00E285D7 /* AppDelegate.m */; };
+		0793C17B18156E9C00E285D7 /* ARKitEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C16A18156E9C00E285D7 /* ARKitEngine.m */; };
+		0793C17C18156E9C00E285D7 /* LocalizationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C16F18156E9C00E285D7 /* LocalizationHelper.m */; };
+		0793C17D18156E9C00E285D7 /* ARGeoCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C17218156E9C00E285D7 /* ARGeoCoordinate.m */; };
+		0793C17E18156E9C00E285D7 /* ARObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C17518156E9C00E285D7 /* ARObjectView.m */; };
+		0793C17F18156E9C00E285D7 /* RadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C17718156E9C00E285D7 /* RadarView.m */; };
+		0793C18018156E9C00E285D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C17918156E9C00E285D7 /* ViewController.m */; };
+		0793C1851815701500E285D7 /* ARKitConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0793C1841815701500E285D7 /* ARKitConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		071F37EA181EF44800F1C53B /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		071F37EB181EF44800F1C53B /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		071F37EC181EF44800F1C53B /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		071F37ED181EF44800F1C53B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		071F37EE181EF44800F1C53B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		071F37EF181EF44800F1C53B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		071F37F0181EF44800F1C53B /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
+		071F37F3181EF44800F1C53B /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		071F37F4181EF44800F1C53B /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		071F37FF181EF49000F1C53B /* radar_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar_dot.png; sourceTree = "<group>"; };
+		0732E365181AC24C00B168AC /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		0732E366181AC24D00B168AC /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		0793C12C18156D5600E285D7 /* ARKit Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0793C12F18156D5600E285D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0793C13118156D5600E285D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0793C13318156D5600E285D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0793C13718156D5600E285D7 /* ARKit Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARKit Example-Info.plist"; sourceTree = "<group>"; };
+		0793C13B18156D5600E285D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0793C13D18156D5600E285D7 /* ARKit Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKit Example-Prefix.pch"; sourceTree = "<group>"; };
+		0793C14E18156D5600E285D7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0793C16518156E9C00E285D7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0793C16618156E9C00E285D7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0793C16818156E9C00E285D7 /* ARKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKit.h; sourceTree = "<group>"; };
+		0793C16918156E9C00E285D7 /* ARKitEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKitEngine.h; sourceTree = "<group>"; };
+		0793C16A18156E9C00E285D7 /* ARKitEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKitEngine.m; sourceTree = "<group>"; };
+		0793C16B18156E9C00E285D7 /* ARViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewDelegate.h; sourceTree = "<group>"; };
+		0793C16D18156E9C00E285D7 /* LocalizationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationDelegate.h; sourceTree = "<group>"; };
+		0793C16E18156E9C00E285D7 /* LocalizationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationHelper.h; sourceTree = "<group>"; };
+		0793C16F18156E9C00E285D7 /* LocalizationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationHelper.m; sourceTree = "<group>"; };
+		0793C17118156E9C00E285D7 /* ARGeoCoordinate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARGeoCoordinate.h; sourceTree = "<group>"; };
+		0793C17218156E9C00E285D7 /* ARGeoCoordinate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARGeoCoordinate.m; sourceTree = "<group>"; };
+		0793C17418156E9C00E285D7 /* ARObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARObjectView.h; sourceTree = "<group>"; };
+		0793C17518156E9C00E285D7 /* ARObjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARObjectView.m; sourceTree = "<group>"; };
+		0793C17618156E9C00E285D7 /* RadarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadarView.h; sourceTree = "<group>"; };
+		0793C17718156E9C00E285D7 /* RadarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarView.m; sourceTree = "<group>"; };
+		0793C17818156E9C00E285D7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0793C17918156E9C00E285D7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0793C1831815701500E285D7 /* ARKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARKitConfig.h; sourceTree = "<group>"; };
+		0793C1841815701500E285D7 /* ARKitConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARKitConfig.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0793C12918156D5600E285D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793C13218156D5600E285D7 /* CoreGraphics.framework in Frameworks */,
+				0793C13418156D5600E285D7 /* UIKit.framework in Frameworks */,
+				0793C13018156D5600E285D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071F37E8181EF44800F1C53B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				071F37E9181EF44800F1C53B /* Images */,
+				071F37F2181EF44800F1C53B /* Xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		071F37E9181EF44800F1C53B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				071F37FF181EF49000F1C53B /* radar_dot.png */,
+				071F37EA181EF44800F1C53B /* arrow.png */,
+				071F37EB181EF44800F1C53B /* box.png */,
+				071F37EC181EF44800F1C53B /* close.png */,
+				071F37ED181EF44800F1C53B /* Default-568h@2x.png */,
+				071F37EE181EF44800F1C53B /* Default.png */,
+				071F37EF181EF44800F1C53B /* Default@2x.png */,
+				071F37F0181EF44800F1C53B /* radar.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		071F37F2181EF44800F1C53B /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				071F37F3181EF44800F1C53B /* DetailView.xib */,
+				071F37F4181EF44800F1C53B /* ViewController.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		0793C12318156D5600E285D7 = {
+			isa = PBXGroup;
+			children = (
+				0793C13518156D5600E285D7 /* ARKit Example */,
+				0793C12E18156D5600E285D7 /* Frameworks */,
+				0793C12D18156D5600E285D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0793C12D18156D5600E285D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0793C12C18156D5600E285D7 /* ARKit Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0793C12E18156D5600E285D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0793C12F18156D5600E285D7 /* Foundation.framework */,
+				0793C13118156D5600E285D7 /* CoreGraphics.framework */,
+				0793C13318156D5600E285D7 /* UIKit.framework */,
+				0793C14E18156D5600E285D7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0793C13518156D5600E285D7 /* ARKit Example */ = {
+			isa = PBXGroup;
+			children = (
+				071F37E8181EF44800F1C53B /* Resources */,
+				0793C16418156E9C00E285D7 /* Classes */,
+				0793C13618156D5600E285D7 /* Supporting Files */,
+			);
+			path = "ARKit Example";
+			sourceTree = "<group>";
+		};
+		0793C13618156D5600E285D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0793C13718156D5600E285D7 /* ARKit Example-Info.plist */,
+				0793C13B18156D5600E285D7 /* main.m */,
+				0793C13D18156D5600E285D7 /* ARKit Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0793C16418156E9C00E285D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0793C16518156E9C00E285D7 /* AppDelegate.h */,
+				0793C16618156E9C00E285D7 /* AppDelegate.m */,
+				0793C16718156E9C00E285D7 /* ARKit */,
+				0793C17818156E9C00E285D7 /* ViewController.h */,
+				0793C17918156E9C00E285D7 /* ViewController.m */,
+				0732E365181AC24C00B168AC /* DetailView.h */,
+				0732E366181AC24D00B168AC /* DetailView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0793C16718156E9C00E285D7 /* ARKit */ = {
+			isa = PBXGroup;
+			children = (
+				0793C16818156E9C00E285D7 /* ARKit.h */,
+				0793C16918156E9C00E285D7 /* ARKitEngine.h */,
+				0793C16A18156E9C00E285D7 /* ARKitEngine.m */,
+				0793C16B18156E9C00E285D7 /* ARViewDelegate.h */,
+				0793C16D18156E9C00E285D7 /* LocalizationDelegate.h */,
+				0793C16E18156E9C00E285D7 /* LocalizationHelper.h */,
+				0793C16F18156E9C00E285D7 /* LocalizationHelper.m */,
+				0793C17018156E9C00E285D7 /* Model */,
+				0793C17318156E9C00E285D7 /* View */,
+				0793C1831815701500E285D7 /* ARKitConfig.h */,
+				0793C1841815701500E285D7 /* ARKitConfig.m */,
+			);
+			path = ARKit;
+			sourceTree = "<group>";
+		};
+		0793C17018156E9C00E285D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0793C17118156E9C00E285D7 /* ARGeoCoordinate.h */,
+				0793C17218156E9C00E285D7 /* ARGeoCoordinate.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0793C17318156E9C00E285D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0793C17418156E9C00E285D7 /* ARObjectView.h */,
+				0793C17518156E9C00E285D7 /* ARObjectView.m */,
+				0793C17618156E9C00E285D7 /* RadarView.h */,
+				0793C17718156E9C00E285D7 /* RadarView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0793C12B18156D5600E285D7 /* ARKit Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0793C15E18156D5600E285D7 /* Build configuration list for PBXNativeTarget "ARKit Example" */;
+			buildPhases = (
+				0793C12818156D5600E285D7 /* Sources */,
+				0793C12918156D5600E285D7 /* Frameworks */,
+				0793C12A18156D5600E285D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARKit Example";
+			productName = "ARKit Example";
+			productReference = 0793C12C18156D5600E285D7 /* ARKit Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0793C12418156D5600E285D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 0793C12718156D5600E285D7 /* Build configuration list for PBXProject "ARKit Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0793C12318156D5600E285D7;
+			productRefGroup = 0793C12D18156D5600E285D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0793C12B18156D5600E285D7 /* ARKit Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0793C12A18156D5600E285D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071F37FE181EF44800F1C53B /* ViewController.xib in Resources */,
+				071F37FD181EF44800F1C53B /* DetailView.xib in Resources */,
+				071F37FA181EF44800F1C53B /* Default@2x.png in Resources */,
+				071F37F7181EF44800F1C53B /* close.png in Resources */,
+				071F37FB181EF44800F1C53B /* radar.png in Resources */,
+				071F37F8181EF44800F1C53B /* Default-568h@2x.png in Resources */,
+				071F3800181EF49000F1C53B /* radar_dot.png in Resources */,
+				071F37F5181EF44800F1C53B /* arrow.png in Resources */,
+				071F37F6181EF44800F1C53B /* box.png in Resources */,
+				071F37F9181EF44800F1C53B /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0793C12818156D5600E285D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793C17E18156E9C00E285D7 /* ARObjectView.m in Sources */,
+				0793C17C18156E9C00E285D7 /* LocalizationHelper.m in Sources */,
+				0793C18018156E9C00E285D7 /* ViewController.m in Sources */,
+				0793C17A18156E9C00E285D7 /* AppDelegate.m in Sources */,
+				0793C17B18156E9C00E285D7 /* ARKitEngine.m in Sources */,
+				0793C13C18156D5600E285D7 /* main.m in Sources */,
+				0793C17D18156E9C00E285D7 /* ARGeoCoordinate.m in Sources */,
+				0732E367181AC24D00B168AC /* DetailView.m in Sources */,
+				0793C17F18156E9C00E285D7 /* RadarView.m in Sources */,
+				0793C1851815701500E285D7 /* ARKitConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0793C15C18156D5600E285D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0793C15D18156D5600E285D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0793C15F18156D5600E285D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARKit Example/ARKit Example-Prefix.pch";
+				INFOPLIST_FILE = "ARKit Example/ARKit Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0793C16018156D5600E285D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARKit Example/ARKit Example-Prefix.pch";
+				INFOPLIST_FILE = "ARKit Example/ARKit Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0793C12718156D5600E285D7 /* Build configuration list for PBXProject "ARKit Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0793C15C18156D5600E285D7 /* Debug */,
+				0793C15D18156D5600E285D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0793C15E18156D5600E285D7 /* Build configuration list for PBXNativeTarget "ARKit Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0793C15F18156D5600E285D7 /* Debug */,
+				0793C16018156D5600E285D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0793C12418156D5600E285D7 /* Project object */;
+}
