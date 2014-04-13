@@ -18,15 +18,27 @@
 - (void) viewDidLoad {
     selectedIndex = -1;
     
-    CLLocation *location = [[CLLocation alloc] initWithLatitude:40.960887 longitude:-5.666279];
-    ARGeoCoordinate *cat = [ARGeoCoordinate coordinateWithLocation:location];
-    cat.dataObject = @"Catedral";
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:34.052337 longitude:-118.243680];
+    ARGeoCoordinate *la = [ARGeoCoordinate coordinateWithLocation:location];
+    la.dataObject = @"Los Angeles";
     
-    location = [[CLLocation alloc] initWithLatitude:40.976027 longitude:-5.655125];
-    ARGeoCoordinate *ci = [ARGeoCoordinate coordinateWithLocation:location];
-    ci.dataObject = @"El Corte ingles";
+    location = [[CLLocation alloc] initWithLatitude:40.71448 longitude:-74.00598];
+    ARGeoCoordinate *ny = [ARGeoCoordinate coordinateWithLocation:location];
+    ny.dataObject = @"New York";
     
-    points = @[ci];
+    location = [[CLLocation alloc] initWithLatitude:51.500622 longitude:-0.126662];
+    ARGeoCoordinate *london = [ARGeoCoordinate coordinateWithLocation:location];
+    london.dataObject = @"London";
+    
+    location = [[CLLocation alloc] initWithLatitude:39.904459 longitude:116.406847];
+    ARGeoCoordinate *pekin = [ARGeoCoordinate coordinateWithLocation:location];
+    pekin.dataObject = @"Beijing";
+    
+    location = [[CLLocation alloc] initWithLatitude:55.756151 longitude:37.61727];
+    ARGeoCoordinate *mos = [ARGeoCoordinate coordinateWithLocation:location];
+    mos.dataObject = @"Moscow";
+    
+    points = @[la, ny, london, pekin, mos];
 }
 
 - (IBAction)showAR:(id)sender {
