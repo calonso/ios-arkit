@@ -291,62 +291,18 @@ NSComparisonResult LocationSortClosestFirst(ARGeoCoordinate *s1, ARGeoCoordinate
     [motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
                                         withHandler:^(CMAccelerometerData *accelerometerData, NSError *error)
     {
-        static CGFloat x0 = 0;
-        static CGFloat y0 = 0;
         static CGFloat z0 = 0;
         
         const NSTimeInterval dt = 1.0 / ACCELEROMETER_UPDATE_FREQUENCY;
         const double RC = 0.3;
         const double alpha = dt / (RC + dt);
         
-        CMAcceleration acceleration;
-        acceleration.x = (alpha * accelerometerData.acceleration.x) + (1.0 - alpha) * x0;
-        acceleration.y = (alpha * accelerometerData.acceleration.y) + (1.0 - alpha) * y0;
-        acceleration.z = (alpha * accelerometerData.acceleration.z) + (1.0 - alpha) * z0;
+        CGFloat currZ = (alpha * accelerometerData.acceleration.z) + (1.0 - alpha) * z0;
         
-        // -1 face down.
-        // 1 face up.
+        //update the center coordinate inclination.
+        centerCoordinate.inclination = currZ * VIEWPORT_HEIGHT_RADIANS;
         
-        //update the center coordinate.
-        double xyValue;
-        int modifier;
-        
-        switch (orientationSupporter.orientation) {
-            case UIInterfaceOrientationPortrait:
-                xyValue = acceleration.y;
-                modifier = 1;
-                break;
-            case UIInterfaceOrientationLandscapeLeft:
-                xyValue = acceleration.x;
-                modifier = -1;
-                break;
-            case UIInterfaceOrientationLandscapeRight:
-                xyValue = acceleration.x;
-                modifier = 1;
-                break;
-            case UIInterfaceOrientationPortraitUpsideDown:
-                xyValue = acceleration.y;
-                modifier = -1;
-                break;
-            default:
-                NSAssert(NO, @"No orientation set!!");
-                break;
-        }
-        
-        if (accelerometerData.acceleration.z > 0.0) {
-            centerCoordinate.inclination = atan(modifier * xyValue / acceleration.z) + M_PI_2;
-        } else if (accelerometerData.acceleration.z < 0.0) {
-            centerCoordinate.inclination = atan(modifier * xyValue / acceleration.z) - M_PI_2;
-        } else if (xyValue < 0) {
-            centerCoordinate.inclination = M_PI_2;
-        } else if (xyValue >= 0) {
-            centerCoordinate.inclination = 3 * M_PI_2;
-        }
-        
-        x0 = acceleration.x;
-        y0 = acceleration.y;
-        z0 = acceleration.z;
-                                            
+        z0 = currZ;
     }];
     
     if (centerCoordinate) {
