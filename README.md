@@ -70,6 +70,14 @@ At this moment you should be enjoying a fully featured augmented reality view sh
 
 And that's all!! For more information on how to add custom overlay views, configure the radar position, start the engine in different orientations or better understanding of the front/floor looking feature, please run the provided example project.
 
+## For iOS 8 Support
+Add these keys in Info.plist of your app
+* **NSLocationWhenInUseUsageDescription** (String - iOS) describes the reason why the app accesses the user’s location normally while running in the foreground. Include this key when your app uses location services to track the user’s current location directly. This key does not support using location services to monitor regions or monitor the user’s location using the significant location change service. The system includes the value of this key in the alert panel displayed to the user when requesting permission to use location services.This key is required when you use the requestWhenInUseAuthorization method of the CLLocationManager class to request authorization for location services. If the key is not present when you call the requestWhenInUseAuthorization method without including this key, the system ignores your request.This key is supported in iOS 8.0 and later. If your Info.plist file includes both this key and the NSLocationUsageDescription key, the system uses this key and ignores the NSLocationUsageDescription key.
+
+* **NSLocationAlwaysUsageDescription** (String - iOS) describes the reason why the app accesses the user’s location information. Include this key when your app uses location services in a potentially nonobvious way while running in the foreground or the background. For example, a social app might include this key when it uses location information to track the user’s location and display other users that are nearby. In this case, the fact that the app is tracking the user’s location might not be readily apparent. The system includes the value of this key in the alert panel displayed to the user when requesting permission to use location services. This key is required when you use the requestAlwaysAuthorization method of the CLLocationManager class to request authorization for location services. If this key is not present and you call the requestAlwaysAuthorization method, the system ignores your request and prevents your app from using location services.This key is supported in iOS 8.0 and later. If your Info.plist file includes both this key and the NSLocationUsageDescription key, the system uses this key and ignores the NSLocationUsageDescription key.
+
+[Reference Source: Apple Documentation] (https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html)
+
 ## Acknowledgements
 
  * [Zac White](https://github.com/zac). For his awesome iPhone ARKit that I used as the starting point for this engine.

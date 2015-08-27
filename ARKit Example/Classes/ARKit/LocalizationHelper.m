@@ -31,6 +31,7 @@ static LocalizationHelper *sharedHelper;
         locationManager.headingFilter = kCLHeadingFilterNone;
 		locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 		locationManager.distanceFilter = kCLDistanceFilterNone;
+	[locationManager requestAlwaysAuthorization];
         
         isHeadingInfoAvailable = [CLLocationManager headingAvailable];
         
