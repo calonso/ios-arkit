@@ -70,6 +70,13 @@ At this moment you should be enjoying a fully featured augmented reality view sh
 
 And that's all!! For more information on how to add custom overlay views, configure the radar position, start the engine in different orientations or better understanding of the front/floor looking feature, please run the provided example project.
 
+## For iOS 8 Support
+Add these key in Info.plist of your app
+NSLocationAlwaysUsageDescription
+NSLocationWhenInUseUsageDescription
+
+Both of these are string values.
+
 ## Acknowledgements
 
  * [Zac White](https://github.com/zac). For his awesome iPhone ARKit that I used as the starting point for this engine.
