@@ -368,7 +368,7 @@ NSComparisonResult LocationSortClosestFirst(ARGeoCoordinate *s1, ARGeoCoordinate
 }
 
 - (void)updateLocations:(NSTimer *)timer {
-    [radar updatePoints:centerCoordinate];
+	[radar updatePoints:centerCoordinate reloadData:NO];
     
 	if (!ar_coordinateViews || ar_coordinateViews.count == 0) {
 		return;
