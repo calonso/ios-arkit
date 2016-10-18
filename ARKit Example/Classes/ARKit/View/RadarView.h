@@ -20,6 +20,6 @@
 
 - (id)initAtPoint:(CGPoint)middlePoint;
 
-- (void) updatePoints:(ARGeoCoordinate *)centerCoord;
+- (void)updatePoints:(ARGeoCoordinate *)centerCoord reloadData:(BOOL)reloadData;
 
 @end
